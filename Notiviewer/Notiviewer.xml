@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was created with ExeOutput 24.2.0.0. Please respect the structure of the XML file if you want to import changes back to ExeOutput.--><hesyspage title="Style sheet" desc="This CSS file is used by all dialog boxes">
+	<contents><![CDATA[<FONT size="9"></FONT><FONT face="@MS Gothic"></FONT>html{
+height: 100%;  
+}
+body{
+background: rgba(244,240,244,1);
+background: -moz-linear-gradient(top, rgba(244,240,244,1) 0%, rgba(171,171,171,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(244,240,244,1)), color-stop(100%, rgba(171,171,171,1)));
+background: -webkit-linear-gradient(top, rgba(244,240,244,1) 0%, rgba(171,171,171,1) 100%);
+background: -o-linear-gradient(top, rgba(244,240,244,1) 0%, rgba(171,171,171,1) 100%);
+background: -ms-linear-gradient(top, rgba(244,240,244,1) 0%, rgba(171,171,171,1) 100%);
+background: linear-gradient(to bottom, rgba(244,240,244,1) 0%, rgba(171,171,171,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f0f4', endColorstr='#ababab', GradientType=0 );
+color:#000;font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;font-size:small;list-style-type:square}
+h1,h2{color:#117DAF;font-size:large;font-weight:700} 
+                       
+]]></contents>
+</hesyspage>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was created with ExeOutput 24.2.0.0. Please respect the structure of the XML file if you want to import changes back to ExeOutput.--><hescript name="UserMain" desc="Lets you insert commands in global events.">
+	<contents><![CDATA[// UserMain
+// This script contains special functions related to some of the events triggered by the application.
+// You can then optionally add new commands.
+
+function OnBeforeNavigate(NewURL, TargetFrame: String): Boolean;
+begin
+ // Before the application displays a page. Set Result to True to stop the operation.
+ Result := False;
+end;
+
+procedure OnPHPErrorMessage(ErrorMsg: String);
+begin
+ // When an error is returned by the PHP runtime.
+end;
+
+function OnRouterURL(RequestedURL, RequestedFilename, PathInfo, QueryString: String): String;
+begin
+// Lets you reroute any URL.
+// Set Result to an empty string for no redirection.
+// Set Result to the new URL if you want a permanent redirection.
+ Result := "";
+end;
+
+procedure OnNavigateComplete(URL: String);
+begin
+ // When a page has been displayed.
+end;
+
+function OnPubLoaded: Boolean;
+begin
+ // When the application is starting.
+ // Set Result to True if you want to exit immediately without any warning.
+ Result := False;
+end;
+
+procedure OnPubBeingClosed;
+begin
+ // When the application is going to be closed.
+end;
+
+procedure OnDisplayWindow(WindowName: String);
+begin
+ // When a window is going to be displayed (including main and secondary windows).
+end;
+
+procedure OnStartMainWindow;
+begin
+ // When the main window is going to be displayed (just before the homepage is shown).
+end;
+
+procedure OnCloseWindow(WindowName: String);
+begin
+ // When a window is closed by the user.
+end;
+
+function OnTimer(TimerName: String): Boolean;
+begin
+ // Occurs when a specified amount of time, determined by StartTimer HEScript function, has passed.
+ // Note: use StopTimer to disable the timer or set Result to True.
+ Result := False;
+end;
+
+function OnInvalidPasswordAtStartup: Boolean;
+begin
+ // Occurs when an invalid global password is provided.
+ // Note: set to True if you want the application NOT to display an error message and exit.
+ Result := False;
+end;
+
+function OnExpiredPublication: Boolean;
+begin
+ // Occurs when the global expiration date is reached.
+ // Note: set to True if you want the application NOT to display an error message and exit.
+ Result := False;
+end;
+
+procedure OnTrayIconClick;
+begin
+ // The user clicks on the tray icon.
+end;
+
+procedure OnTrayIconDblClick;
+begin
+ // The user double-clicks on the tray icon.
+end;
+
+procedure OnPrintPage;
+begin
+ // When a user wants to print the current page.
+end;]]></contents>
+</hescript>

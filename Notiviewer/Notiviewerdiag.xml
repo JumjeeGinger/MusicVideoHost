@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was created with ExeOutput 24.2.0.0. Please respect the structure of the XML file if you want to import changes back to ExeOutput.--><hesyspage title="About Dialog Box" desc="The HTML code to generate the About dialog box">
+	<contents><![CDATA[<!doctype html>
+<html>              
+<head>                              
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="About Box HTML Dialog">
+<meta name="product" content="ExeOutput">
+<meta name="revision" content="2.0">
+<meta name="windowheight" content="370">
+<meta name="windowwidth" content="415">
+<!-- Dialog box designed for Chromium engine -->
+<title>[#YAboutTitle]</title>
+<link rel="stylesheet" type="text/css" href="ghe://heserver/heintsys/hepages.css">
+                                 
+<script language="javascript">
+                                  
+ function TitleCallback(content) {
+  document.getElementById('title').outerHTML = '<h1>[#YAbout] '+ content + '</h1>'; 
+ }    
+ 
+ function CopyrightCallback(content) {
+  document.getElementById('copyright').outerHTML = '<p>' + content + '</p>'; 
+ }    
+ 
+ function closewindow()
+ {
+  exeoutput.CloseCurrentWindow();
+ }
+                                   
+</script>
+
+</head>
+
+<body scroll="no">                            
+
+<div id="title"></div>  
+
+<div id="copyright"></div>  
+
+<form method="post" action="javascript:closewindow();">
+
+<HR NOSHADE size="1">
+<p>
+<!-- You are allowed to remove the following statement only if
+you have purchased the "No Branding Option".
+Otherwise you must leave it.
+-->
+<font color="#000000">Built with ExeOutput</font><br>
+<a href="http://www.exeoutput.com" target="_blank">http://www.exeoutput.com</a>
+</p>
+<p align="right">
+<input type="submit" name="bok" value="[#YClose]"></p>
+</form>  
+
+<script language="javascript">                    
+ exeoutput.GetString('SPubTitle', TitleCallback);
+ exeoutput.GetString('SPubCopyright', CopyrightCallback);        
+</script>          
+
+</body>                     
+</html>
+
+]]></contents>
+</hesyspage>
